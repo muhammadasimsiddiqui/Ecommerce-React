@@ -1,0 +1,13 @@
+.HeroSection{
+    background-image: url(/banner/Herobg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+
+.Hero-Img img{
+    width: 200px !important;
+    height: auto;    align-content: center;
+    justify-content: center;
+}
