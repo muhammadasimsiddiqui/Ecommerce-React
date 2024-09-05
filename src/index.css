@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: "Roboto", sans-serif; }
+    a,
+    a:hover,
+    a:focus {
+      text-decoration: none !important;
+      
+    }
+    a:hover,
+    a:focus {
+      color: var(--primary-color);
+      
+    }
+ul,
+ol {
+  margin: 0; }
+
+  ul li,
+  ol li {
+    list-style: none; }
+
+:root{
+    --primary-color: #1abc9c;
+    --wht: #fff;
+   
+}

@@ -4,14 +4,25 @@ import { useState } from 'react'
 import './App.css'
 import Header  from './assets/components/Header/Header.jsx'
 import Footer from './assets/components/Footer/Footer.jsx'
-import Hero from './assets/components/HeroSection/Hero.jsx'
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Shop from './pages/Shop.jsx';
 function App() {
 
   return (
     <>
-    <Header></Header>
-    <Hero></Hero>
-    <Footer></Footer>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
+      <Footer />
 
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -34,7 +45,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
     </>
-  )
+  );
 }
 
 export default App

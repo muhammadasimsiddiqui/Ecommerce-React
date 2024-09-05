@@ -1,0 +1,60 @@
+/* Global styles and variables should be defined in the root CSS file */
+
+#main_header_cnt {
+  transition: top 0.3s ease-in-out;
+  top: 0; 
+  width: 100%;
+  z-index: 1030;
+}
+
+.top-header {
+  color: var(--wht);
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.top-header a {
+  color: var(--wht);
+  margin-right: 15px;
+}
+
+.main-navbar {
+  transition: background-color 0.3s ease, top 0.3s ease-in-out;
+  padding: 20px 0;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  position: relative; /* Initially, the navbar is relative */
+}
+
+.main-navbar .navbar-brand {
+  font-weight: bold;
+  color: var(--wht);
+}
+
+.main-navbar .navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+.main-navbar .nav-link {
+  color: var(--wht);
+  margin-right: 20px;
+}
+
+.main-navbar .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.main-navbar .nav-icon {
+  color: var(--wht);
+  font-size: 20px;
+}
+
+.main-navbar .nav-icon:hover {
+  color: var(--primary-color);
+}
+
+.scrollheader {
+  background-color: rgba(0, 0, 0, 1.0);
+  padding: 10px 0;
+}

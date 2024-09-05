@@ -3,15 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import HeroImg from '/banner/Hero.jpg'
 import './Hero.css'
-
-
+import HomeHeroCarousel from './homeHerocrousel';
 
 export default function Hero() {
   return (
     <>   
-           <Container fluid className='HeroSection'>
+           <Container fluid className='HeroSection p-0'>
+           <HomeHeroCarousel />
                 <Container >
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-md-6 d-flex flex-column justify-content-start text-start align-items-center">
                         <h6>Trade-In-Offer</h6>
                         <h2>
@@ -24,7 +24,7 @@ export default function Hero() {
                     <div className="col-md-6 Hero-Img d-flex justify-content-center align-items-center" >
                         <img src={HeroImg}/>
                     </div>
-                </div>
+                </div> */}
                 </Container>
           </Container>
     </>
